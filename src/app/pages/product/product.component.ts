@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductItemComponent } from "../../common/product-item/product-item.component";
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-product',
-  imports: [ProductItemComponent],
+  imports: [ProductItemComponent,NgFor],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
 })

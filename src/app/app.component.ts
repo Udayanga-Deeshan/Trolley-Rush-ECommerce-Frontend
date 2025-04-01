@@ -35,8 +35,8 @@ export class AppComponent {
   }
 
   loadProductsToTable(){
-    this.productService.loadPorducts().subscribe((product)=>{
-      this.productList=product
+    this.productService.loadPorducts().subscribe((productList:Product[])=>{
+      this.productList=productList;
     })
   }
 
